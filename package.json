@@ -13,7 +13,6 @@
     "heroku-postbuild": "ng build --prod",
     "start": "http-server dist/",
   },
-  "private": true,
   "dependencies": {
     "@angular/animations": "^5.2.0",
     "@angular/common": "^5.2.0",
