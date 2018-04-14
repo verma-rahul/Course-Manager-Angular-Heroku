@@ -1,7 +1,11 @@
 {
   "name": "course-manager",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "license": "MIT",
+  "private": true,
+  "engines": {
+    "node": "8.9.x"
+  },
   "scripts": {
     "ng": "ng",
     "start-local": "ng serve",
@@ -13,6 +17,9 @@
     "heroku-postbuild": "ng build --prod",
     "start": "http-server dist/"
   },
+  "cacheDirectories": [
+   "node_modules"
+ ],
   "dependencies": {
     "@angular/animations": "^5.2.0",
     "@angular/common": "^5.2.0",
