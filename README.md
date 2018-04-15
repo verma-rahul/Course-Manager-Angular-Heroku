@@ -19,20 +19,6 @@ An application developed in Angular 5 standAlone on Heroku
   `heroku buildpacks:add --index 2 https://github.com/heroku/heroku-buildpack-static.git --app <heroku-app-name>`
   to add the Heroku builpacks (Node and Nignix-Static-Server)
 
-heroku create 'app-name'
-heroku buildpacks:add --index 1 heroku/nodejs --index 2 https://github.com/heroku/heroku-buildpack-static.git
-add "postinstall": "ng build --prod" to scripts
-add the static.json as mentioned below
-
-type heroku buildpacks to check
-
-heroku buildpacks:add --index 1 heroku/nodejs --app course-manager-angular
-heroku buildpacks:add --index 2 https://github.com/heroku/heroku-buildpack-static.git --app course-manager-angular
-heroku create 'app-name'
-heroku buildpacks:add --index 1 heroku/nodejs --index 2 https://github.com/heroku/heroku-buildpack-static.git
-add "postinstall": "ng build --prod" to scripts
-add the static.json as mentioned below
-
 ### Setup Proxy for Heroku :
 - add `"postinstall": "ng build --prod"` to `scripts` section of `package.json` (This builds the app as Static asset, to be later used by NIGNIX static server used internally by static-buildpack)
 - add a file `static.json` as given below:
