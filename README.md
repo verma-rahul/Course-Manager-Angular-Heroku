@@ -1,7 +1,7 @@
 ## Course Management Application: Standalone Angular 5 Application on Heroku
 
 An application developed in Angular 5 standAlone on Heroku
-
+Deployed Here [https://course-manager-angular.herokuapp.com/]
 
 ## Installaiton Help:
 
