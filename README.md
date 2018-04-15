@@ -21,8 +21,7 @@ Deployed Here [https://course-manager-angular.herokuapp.com/]
 
 ### Setup Proxy for Heroku :
 - add `"postinstall": "ng build --prod"` to `scripts` section of `package.json` (This builds the app as Static asset, to be later used by NIGNIX static server used internally by static-buildpack)
-- add a file `static.json` as given below:
-- add the static.json as mentioned below, where `$API_URL` is to be set in config
+- add a file `static.json` as given below, where `$API_URL` is to be set in config
 variables on heroku to point to Backend-Server. (Please see the [https://github.com/heroku/heroku-buildpack-static] for more help)
 `{
   "root": "dist/",
