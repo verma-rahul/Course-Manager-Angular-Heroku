@@ -1,0 +1,8 @@
+{
+  "/api": {
+    "target": "https://course-manager-spring-boot.herokuapp.com",
+    "secure": false,
+    "logLevel": "debug",
+    "changeOrigin": true
+  }
+}
